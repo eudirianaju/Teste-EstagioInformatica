@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+/*  paleta de cores  */
+:root {
+    --fundoenavbar: #FBFBFB;
+    --navbarletras: #85C2AD;
+}
+
+
+
+body {
+    margin: 0;
+    align-items: center;
+    background-color: var(--fundoenavbar);
+    color: var(--logo);
+    font-family: 'Inter';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+
+header {
+    font-family: 'Inter';
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    transition: all .50s ease;
+}
+
+
+
+header img {
+    height: 110px;
+    margin-left: 7rem;
+}
+
+
+
+header a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+
+.navbar {
+    margin-top: 2.5rem;
+    display: flex;
+    margin-right: 8rem;
+}
+
+
+
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--navbarletras);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 25px;
+}
+
+
+
+.background h1 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translateX(-50%);
+    text-align: left;
+    font: normal normal normal 45px/55px 'Comfortaa';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+
+.background h2 {
+    width: 337px;
+    position: absolute;
+    top: 51.5%;
+    left: 22.2%;
+    transform: translateX(-50%);
+    text-align: center;
+    font: normal normal bold 45px/55px 'Comfortaa';
+    background: var(--unnamed-color-85c2ad) 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    background: #85C2AD 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 5px;
+}
+
+
+
+.overlay-button {
+    text-align: center;
+    font: normal normal bold 16px/18px 'Montserrat', sans-serif;
+    ;
+    letter-spacing: 1.49px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    width: 376px;
+    height: 45px;
+    background: #85C2AD 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 1;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.overlay-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+.background img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: 7rem;
+}
+
+
+
+.card-body h5.card-title {
+    text-align: left;
+    font: normal normal bold 18px/27px Comfortaa, sans-serif;
+    letter-spacing: 0px;
+    color: #4A7866;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+.card-body p.card-text {
+    text-align: left;
+    font: normal normal normal 15px/19px 'Montserrat', sans-serif;
+    letter-spacing: 0px;
+    color: #6D6D6D;
+    opacity: 1;
+}
+
+
+
+.card {
+    width: 28rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 60px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 6rem;
+}
+
+
+
+.sobre {
+    display: flex;
+}
+
+
+
+.esquerda img {
+    margin-left: 15rem;
+    width: 50rem;
+    height: 25rem;
+}
+
+
+
+.esquerda {
+    padding: 20px;
+}
+
+
+
+.direita h1 {
+    margin-top: 5rem;
+    text-align: left;
+    font: normal normal bold 24px/24px Comfortaa;
+    letter-spacing: 0px;
+    color: #4A7866;
+}
+
+
+
+.direita p {
+    text-align: left;
+    font: normal normal normal 21px/24px Comfortaa;
+    letter-spacing: 0px;
+    color: #808183;
+}
+
+
+
+.direita h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #6D6D6D;
+    font-weight: 400;
+}
+
+
+
+.direita button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: #E4AAAC;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+
+.direita button a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: #E4AAAC;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+
+.consultorio {
+    margin-top: 6rem;
+    margin-left: 15rem;
+    display: flex;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.right-img img {
+    margin-top: 3rem;
+
+}
+
+
+
+.carrossel {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    width: 45rem;
+
+
+}
+
+
+
+.consultorio img {
+    height: 25rem;
+
+}
+
+
+
+.consultorio h1,
+.consultorio p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.consultorio h1 {
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #4A7866;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+.consultorio p {
+    text-align: left;
+    font-size: 15px;
+    color: #6D6D6D;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+
+.consultorio h2 {
+    text-align: left;
+    font: normal normal 600 15px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #808183;
+    opacity: 1;
+}
+
+
+
+h2 i {
+    margin-right: 9px;
+}
+
+
+
+.consultorio h3 {
+    text-align: left;
+    font: normal normal 600 15px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #808183;
+    opacity: 1;
+}
+
+
+
+h3 i {
+    transform: rotate(90deg);
+    margin-right: 9px;
+}
+
+
+
+.blue-button {
+    border: none;
+    background: #0BAEDC;
+    border-radius: 22px;
+    opacity: 1;
+    width: 120px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.blue-button img {
+    width: 80px;
+    height: auto;
+}
+
+
+
+.google-button {
+    border: none;
+    background: #511294 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 1;
+    width: 170px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.google-button img {
+    width: 120px;
+    height: auto;
+}
+
+
+
+.custom-button2 {
+    border: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgb(115, 0, 255);
+    margin-left: 10px;
+    width: auto;
+    height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+
+
+.custom-button:hover {
+    opacity: 0.8;
+}
+
+
+
+.not h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #4A7866;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: 6rem;
+}
+
+
+
+.not {
+    text-align: center;
+}
+
+
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+
+.card-not {
+    margin: 0;
+}
+
+
+
+.cards img {
+    border-radius: 20px;
+    height: 26rem;
+    width: 21rem;
+    margin: 5px;
+    object-fit: cover;
+}
+
+
+
+.menores {
+    display: flex;
+    flex-direction: column;
+    height: 26.5rem;
+}
+
+
+
+.special-card1 .cards img,
+.special-card2 .cards img {
+    height: 12.5rem;
+}
+
+
+
+.cards img:hover {
+    filter: blur(2px);
+}
+
+
+
+.text-overlay,
+.text-overlay2 {
+    font: normal normal 600 16px/16px 'Montserrat';
+    margin-top: 295px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    line-height: 1;
+    margin-left: 10px;
+
+}
+
+
+
+.text-overlay2 {
+    font: normal normal 300 14px/14px 'Montserrat';
+    letter-spacing: 0px;
+    color: #ffffffbc;
+    bottom: 9px;
+
+}
+
+
+
+.text-overlay2 strong {
+    font-weight: bold;
+    color: inherit;
+}
+
+
+
+.text-overlay2 small {
+    font: normal normal 300 14px/1 'Montserrat';
+    display: block;
+    color: #ffffffbc;
+    margin-top: 5px;
+}
+
+
+
+.vertodos {
+    text-align: center;
+    font: normal normal normal 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #6D6D6D;
+    opacity: 1;
+    border: none;
+    background-color: #ffffff;
+}
+
+
+
+.vertodos a {
+    text-align: center;
+    font: normal normal normal 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #6D6D6D;
+    opacity: 1;
+    border: none;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.bottom {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+
+}
+
+
+
+.icons-baby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.perguntas p {
+    color: var(--unnamed-color-e4aaac);
+    text-align: center;
+    font: normal normal medium 19px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #E4AAAC;
+    opacity: 1;
+}
+
+
+
+.perguntas h2 {
+    text-align: center;
+    font: normal normal bold 24px/32px Comfortaa;
+    letter-spacing: 0px;
+    color: #4A7866;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+.perguntas h3 {
+    color: var(--unnamed-color-e4aaac);
+    text-align: center;
+    font: normal normal medium 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #E4AAAC;
+    opacity: 1;
+}
+
+
+
+.bottom button {
+    border: none;
+    background-color: #E4AAAC;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+
+.bottom button a {
+    text-decoration: none;
+    border: none;
+    background-color: #E4AAAC;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+
+.agendar {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+
+
+.agendar-esquerda img {
+    margin-left: 15rem;
+    width: 50rem;
+    height: 25rem;
+}
+
+
+
+.agendar-esquerda {
+    padding: 20px;
+}
+
+
+
+.agendar-direita h1 {
+    text-align: left;
+    font: normal normal bold 20px Comfortaa;
+    letter-spacing: 0px;
+    color: #4A7866;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+.agendar-direita p {
+    text-align: left;
+    font: normal normal normal 16px/16px Montserrat;
+    color: #6D6D6D;
+    opacity: 1;
+
+}
+
+
+
+.agendar-direita button {
+    border: none;
+    background-color: #E4AAAC;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+
+button i.rotate-90 {
+    transform: rotate(90deg);
+
+}
+
+
+
+button i {
+    margin-right: 9px;
+
+}
+
+
+
+.imagem-direita img {
+    height: 25rem;
+}
+
+
+
+.floating-buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+
+
+.floating-button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+
+
+#button1 {
+    background-color: #0bafdc00;
+    background-image: url('img/WHATSAPP.png');
+}
+
+
+
+#button2 {
+    background-color: #0bafdc00;
+    background-image: url('img/telefone.png');
+}
+
+
+
+.expand-rectangle {
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #45454540;
+}
+
+
+
+.floating-button:hover {
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+
+
+.floating-button:hover .expand-rectangle {
+    opacity: 1;
+}
+
+
+
+.expand-rectangle-text {
+    font: normal normal normal 16px/16px Montserrat;
+    color: #333333;
+}
+
+
+
+.fale-text {
+    font-weight: 600;
+    color: rgb(11, 220, 70);
+}
+
+
+
+.ligue-text {
+    font-weight: 600;
+    color: rgb(237, 34, 101);
+}
+
+
+
+footer {
+    background-color: #c29598;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+footer img {
+    width: 87rem;
+    height: 25rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+.info-bar {
+    background-color: #f5f5f5;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Readex Pro', sans-serif;
+}

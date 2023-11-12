@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+/*  paleta de cores  */
+:root {
+    --fundoenavbar: #FBFBFB;
+    --navbarletras: #85C2AD;
+}
+
+
+
+body {
+    margin: 0;
+    align-items: center;
+    background-color: var(--fundoenavbar);
+    color: var(--logo);
+    font-family: 'Inter';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+
+header {
+    font-family: 'Inter';
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--fundoenavbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    transition: all .50s ease;
+}
+
+
+
+header img {
+    height: 110px;
+    margin-left: 7rem;
+}
+
+
+
+header a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+
+.navbar {
+    margin-top: 2.5rem;
+    display: flex;
+    margin-right: 9rem;
+
+}
+
+
+
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--navbarletras);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 25px;
+
+}
+
+
+
+
+.background a {
+    position: absolute;
+    top: 25%;
+    left: 19.5%;
+    border-radius: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    text-decoration: none;
+    padding: 2px;
+    width: 8rem;
+    background-color: #85C2AD;
+    z-index: 2;
+}
+
+
+
+.background h1 {
+    position: absolute;
+    top: 29.7%;
+    left: 25.7%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 0px;
+    font: 'Comfortaa';
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+.background img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+    margin-top: 7rem;
+}
+
+
+
+.itens {
+    width: 73%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.itens h1 {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    text-align: left;
+    font: normal normal normal 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #7C7C7C;
+    opacity: 1;
+}
+
+
+
+
+.list {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.list img {
+    width: 70px;
+    margin-right: 20px;
+    margin-left: 3.5rem;
+}
+
+
+
+.list p {
+    margin-top: 1rem;
+    text-align: left;
+    font: normal normal normal 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #7C7C7C;
+}
+
+
+.not h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #4A7866;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: 4rem;
+}
+
+.not {
+    text-align: center;
+
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+
+.card-not {
+    margin: 0;
+}
+
+.cards img {
+    border-radius: 20px;
+    height: 26rem;
+    width: 21rem;
+    margin: 5px;
+    object-fit: cover;
+}
+
+
+.menores {
+    display: flex;
+    flex-direction: column;
+    height: 26.5rem;
+}
+
+.special-card1 .cards img,
+.special-card2 .cards img {
+    height: 12.5rem;
+}
+
+.cards img:hover {
+    filter: blur(2px);
+}
+
+.text-overlay,
+.text-overlay2 {
+    font: normal normal 600 16px/16px 'Montserrat';
+    margin-top: 295px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    line-height: 1;
+    margin-left: 10px;
+
+}
+
+
+
+.text-overlay2 {
+    font: normal normal 300 14px/14px 'Montserrat';
+    letter-spacing: 0px;
+    color: #ffffffbc;
+    bottom: 9px;
+
+}
+
+.text-overlay2 strong {
+    font-weight: bold;
+    color: inherit;
+}
+
+.text-overlay2 small {
+    font: normal normal 300 14px/1 'Montserrat';
+    display: block;
+    color: #ffffffbc;
+    margin-top: 5px;
+}
+
+
+
+.floating-buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.floating-button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+#button1 {
+    background-image: url('img/WHATSAPP.png');
+}
+
+#button2 {
+    background-image: url('img/telefone.png');
+}
+
+.expand-rectangle {
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #45454540;
+}
+
+.floating-button:hover {
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.floating-button:hover .expand-rectangle {
+    opacity: 1;
+}
+
+
+.expand-rectangle-text {
+    font: normal normal normal 16px/16px Montserrat;
+    color: #333333;
+}
+
+
+
+.fale-text {
+    font-weight: 600;
+    color: rgb(11, 220, 70);
+}
+
+
+.ligue-text {
+    font-weight: 600;
+    color: rgb(237, 34, 101);
+}
+
+
+
+footer {
+    background-color: #c29598;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+
+footer img {
+    width: 87rem;
+    height: 25rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.info-bar {
+    background-color: #f5f5f5;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Readex Pro', sans-serif;
+}
